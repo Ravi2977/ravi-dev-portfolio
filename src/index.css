@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+.hero-bg {
+  background-color: #0B132B;
+
+  background-image:
+    linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+
+  background-size: 50px 50px;
+}
+
+body{
+  font-family: "Sora", sans-serif;
+}
+
+.code-font{
+  font-family: "JetBrains Mono", monospace;
+}
+
+.grid-bg {
+  background-color: #0B132B;
+
+  background-image:
+    linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+
+  background-size: 50px 50px;
+}
