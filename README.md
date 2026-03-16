@@ -147,9 +147,9 @@ Worked on full stack applications and backend API development.
 
 If you'd like to collaborate, hire me, or discuss a project, feel free to reach out.
 
-📧 Email: your-email@gmail.com  
-💼 LinkedIn: https://linkedin.com/in/your-profile  
-💻 GitHub: https://github.com/your-username  
+📧 Email: mauryaravi599@gmail.com  
+💼 LinkedIn: [https://linkedin.com/in/your-profile ](https://www.linkedin.com/in/ravi-maurya-1a37331b6/) 
+💻 GitHub: [https://github.com/your-username](https://github.com/Ravi2977)  
 
 ---
 
@@ -167,7 +167,7 @@ Available for freelance projects including:
 
 # 📜 License
 
-This project is open-source and available under the **MIT License**.
+This project is open-source and available under the **MY License**.
 
 ---
 
