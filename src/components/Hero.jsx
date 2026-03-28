@@ -31,11 +31,11 @@ export default function Hero() {
                     <h2 className="text-2xl text-gray-400 mt-4">
                         <TypeAnimation
                             sequence={[
-                                "Full Stack Developer",
+                                "Full Stack Developer (React + Spring Boot)",
                                 2000,
-                                "Java Spring Boot Developer",
+                                "Building CRM & Business Management Systems",
                                 2000,
-                                "React.js Developer",
+                                "Helping Businesses Go Digital 🚀",
                                 2000,
                             ]}
                             wrapper="span"
@@ -43,14 +43,13 @@ export default function Hero() {
                             repeat={Infinity}
                         />
                     </h2>
-
                     {/* SOCIAL ICONS */}
 
                     <div className="flex gap-4 mt-3 mb-8 text-xl text-gray-400">
 
                         <a className="w-10 h-10 cursor-pointer flex items-center justify-center rounded-full border border-gray-600 hover:border-cyan-400 hover:text-cyan-400 transition"
-                        href="https://www.linkedin.com/in/ravi-maurya-1a37331b6/"
-                        target="_blank"
+                            href="https://www.linkedin.com/in/ravi-maurya-1a37331b6/"
+                            target="_blank"
                         >
 
                             <FaLinkedin />
@@ -59,14 +58,14 @@ export default function Hero() {
                         <div className="flex gap-4 mb-8 text-lg">
 
                             <a className="w-10 h-10 cursor-pointer flex items-center justify-center rounded-full border border-gray-600 hover:border-cyan-400 hover:text-cyan-400 transition"
-                            href="https://github.com/Ravi2977"
-                            target="_blank"
+                                href="https://github.com/Ravi2977"
+                                target="_blank"
                             >
                                 <FaGithub />
                             </a>
 
                         </div>
-{/* 
+                        {/* 
                         <a className="w-10 h-10 cursor-pointer flex items-center justify-center rounded-full border border-gray-600 hover:border-cyan-400 hover:text-cyan-400 transition">
 
                             <FaTwitter />
@@ -88,7 +87,7 @@ export default function Hero() {
                         </a>
 
                         <a className="bg-blue-500 px-6 py-3 cursor-pointer rounded-lg hover:bg-blue-600"
-                        
+
                             href="#contact">
                             Let's Talk
                         </a>

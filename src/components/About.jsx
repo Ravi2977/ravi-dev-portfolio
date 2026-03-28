@@ -127,17 +127,24 @@ export default function About() {
           </h2>
 
           <p className="text-gray-300 text-lg leading-relaxed mb-5">
-            I’m a <span className="text-cyan-400 font-semibold">Full Stack Developer </span>
-            with <span className="text-cyan-400 font-semibold">2+ years of experience </span>
-            building scalable web and mobile applications.
+            I’m a <span className="text-cyan-400 font-semibold">Full Stack Developer</span> with
+            <span className="text-cyan-400 font-semibold"> 2+ years of experience</span> building
+            scalable web and mobile applications using
+            <span className="text-white"> React.js, Spring Boot, MySQL, and AWS</span>.
+          </p>
+
+
+          <p className="text-gray-400 leading-relaxed mb-4">
+            I specialize in developing real-world business solutions like
+            <span className="text-white"> CRM systems, billing software, and company websites</span>
+            that help businesses <span className="text-white">automate operations, save time, and increase revenue</span>.
           </p>
 
           <p className="text-gray-400 leading-relaxed">
-            I work on modern tech like React, Java, Spring Boot, and AWS.
-            Also working as a freelance developer with a team delivering
-            complete digital solutions.
+            I have delivered multiple production-level projects with clean UI, optimized backend performance,
+            and scalable architecture. I collaborate with teams to build complete digital solutions and am
+            actively open to <span className="text-white">freelance projects and full-time opportunities</span>.
           </p>
-
           <div className="mt-8 flex flex-wrap gap-4">
 
             <div className="px-6 py-3 bg-cyan-500/10 border border-cyan-400 rounded-lg">
@@ -176,6 +183,12 @@ export default function About() {
             </motion.div>
           ))}
 
+          <div className="mt-6 text-gray-300 space-y-2">
+            <p>✔ Built CRM & business management systems</p>
+            <p>✔ 10+ full-stack projects completed</p>
+            <p>✔ Focused on scalable & user-friendly applications</p>
+          </div>
+
         </motion.div>
 
       </div>
@@ -195,7 +208,7 @@ export default function About() {
               {/* HEADER */}
               <div className="flex justify-between items-center mb-4">
                 <h3 className="text-2xl text-cyan-400 font-semibold flex gap-2 items-center justify-center">
-                 {selectedTech.icon} {selectedTech.name}
+                  {selectedTech.icon} {selectedTech.name}
                 </h3>
 
                 <button
