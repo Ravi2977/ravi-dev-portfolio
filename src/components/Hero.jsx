@@ -101,7 +101,7 @@ export default function Hero() {
                     <div className="flex gap-4 mt-8 flex-wrap">
 
                         <a
-                            href="https://drive.google.com/file/d/1C0_4noQKsZHcxOvh1dQwM4NPPlC3JYun/view?usp=drive_link"
+                            href="https://drive.google.com/file/d/1xuiFJTJV-PF2d5OI6Ab6wcBJnyfG7AZL/view?usp=sharing"
                             target="_blank"
                             className="px-6 py-3 rounded-xl border border-gray-600 
               hover:border-cyan-400 hover:text-cyan-400 
