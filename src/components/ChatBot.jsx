@@ -1,10 +1,12 @@
 import React, { useEffect, useRef, useState } from "react";
 import { streamApi } from "../services/chat.service";
+import { v4 as v444 } from 'uuid'
 
 function ChatBot() {
     const [open, setOpen] = useState(false);
     const [isExpanded, setIsExpanded] = useState(false);
     const inputRef = useRef()
+    const [conversationId,setConversationId]=useState("")
 
     const [messages, setMessages] = useState([
         {
@@ -32,6 +34,17 @@ function ChatBot() {
         }
     }, [open, isExpanded]);
 
+    useEffect(()=>{
+        if(localStorage.getItem("conversationId")){
+            setConversationId(localStorage.getItem("conversationId"))
+        }else{
+            const newId = v444();
+            setConversationId(newId);
+            localStorage.setItem("conversationId",newId)
+        }
+    },[])
+
+    console.log(conversationId)
     const sendMessage = async () => {
         const text = input.trim();
         if (!text) return;
@@ -54,7 +67,7 @@ function ChatBot() {
         setLoading(true);
 
         try {
-            await streamApi(text, "portfolio-session", (chunk) => {
+            await streamApi(text, conversationId, (chunk) => {
                 setMessages((prev) =>
                     prev.map((msg) =>
                         msg.id === botId

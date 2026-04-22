@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "https://calldrift.com/chat-with-ravi"
+const BASE_URL = "http://localhost:8081/chat-with-ravi"
 
 
 // 🚀 NEW STREAM API
