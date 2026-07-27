@@ -14,29 +14,29 @@ export default function Contact() {
     {
       icon: <FaPhone className="text-cyan-400 text-2xl" />,
       title: "Phone",
-      value: "+91 8604275934",
-      link: "tel:+918604275934"
+      value: "",
+      link: ""
     },
 
     {
       icon: <FaEnvelope className="text-cyan-400 text-2xl" />,
       title: "Email",
-      value: "mauryaravi599@gmail.com",
-      link: "mailto:mauryaravi599@gmail.com"
+      value: "",
+      link: "mailto:"
     },
 
     {
       icon: <FaLinkedin className="text-cyan-400 text-2xl" />,
       title: "LinkedIn",
-      value: "https://linkedin.com/in/ravi-maurya-1a37331b6/",
-      link: "https://www.linkedin.com/in/ravi-maurya-1a37331b6/"
+      value: "https://linkedin.com/in/Developer-maurya-1a37331b6/",
+      link: "https://www.linkedin.com/in/Developer-maurya-1a37331b6/"
     },
 
     {
       icon: <FaGithub className="text-cyan-400 text-2xl" />,
       title: "GitHub",
-      value: "https://github.com/Ravi2977",
-      link: "https://github.com/Ravi2977"
+      value: "https://github.com/Developer2977",
+      link: "https://github.com/Developer2977"
     }
 
   ];

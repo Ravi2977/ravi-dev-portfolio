@@ -18,8 +18,8 @@ export default function Home() {
       <Projects />
       <Experience />
       <Services/>
-      <Contact />
-      <ChatBot/>
+      {/* <Contact /> */}
+      {/* <ChatBot/> */}
 
 
     </>

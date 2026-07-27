@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import logo from "../assets/images/logo.png";
+import logo from "../assets/images/logo.webp";
 
 export default function Loader() {
   return (
@@ -34,7 +34,7 @@ export default function Loader() {
         transition={{ delay: 0.4 }}
         className="mt-6 text-xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500"
       >
-        Ravi Maurya
+        Website Developer
       </motion.h1>
 
       {/* TAGLINE */}

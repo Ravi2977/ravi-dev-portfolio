@@ -1,6 +1,6 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
-import logo from "../assets/images/logo.png";
+import logo from "../assets/images/logo.webp";
 import { Menu, X } from "lucide-react";
 
 export default function Navbar() {
@@ -27,7 +27,7 @@ export default function Navbar() {
         <a href="#hero" className="flex items-center gap-3">
           <motion.img
             src={logo}
-            alt="Ravi Logo"
+            alt="Developer Logo"
             whileHover={{ scale: 1.05 }}
             className="h-9 md:h-10 w-auto cursor-pointer"
           />

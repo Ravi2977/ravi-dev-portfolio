@@ -45,7 +45,7 @@ export default function Hero() {
 
                     <h1 className="text-5xl md:text-6xl font-bold leading-tight">
                         I’m <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
-                            Ravi Maurya
+                            Website Developer
                         </span>
                     </h1>
 
@@ -74,7 +74,7 @@ export default function Hero() {
                     <div className="flex gap-4 mt-6 text-lg">
 
                         <a
-                            href="https://www.linkedin.com/in/ravi-maurya-1a37331b6/"
+                            href="https://www.linkedin.com/in/Developer-maurya-1a37331b6/"
                             target="_blank"
                             className="w-11 h-11 flex items-center justify-center rounded-full 
               bg-white/5 border border-white/10 
@@ -85,7 +85,7 @@ export default function Hero() {
                         </a>
 
                         <a
-                            href="https://github.com/Ravi2977"
+                            href="https://github.com/Developer2977"
                             target="_blank"
                             className="w-11 h-11 flex items-center justify-center rounded-full 
               bg-white/5 border border-white/10 

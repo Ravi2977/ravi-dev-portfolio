@@ -12,7 +12,7 @@ function ChatBot() {
         {
             id: 1,
             role: "assistant",
-            text: "Hi, I’m Ravi 👋 Full Stack Developer. Batao kya banana hai ya kis cheez me help chahiye?",
+            text: "Hi, I’m Developer 👋 Full Stack Developer. Batao kya banana hai ya kis cheez me help chahiye?",
         },
     ]);
     const [input, setInput] = useState("");
@@ -158,7 +158,7 @@ function ChatBot() {
                 >
                     {/* Header */}
                     <div className="p-3 border-b border-gray-800 text-white font-semibold flex justify-between items-center">
-                        <span>Ravi AI</span>
+                        <span>Developer AI</span>
 
                         <div className="flex gap-2 items-center">
                             {/* Expand / Collapse */}
