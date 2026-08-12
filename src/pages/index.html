@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harsh Engineering Works — Noida | Brass Bush, Nuts, Bolts &amp; Fasteners</title>
+<meta name="description" content="Harsh Engineering Works, Noida — manufacturer of brass bush, nuts, bolts, brass nut, metal bush, metal bolt, nut bolt and industrial fasteners, plus screw cutting job work. GST-registered since 2017.">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          iron:    '#1C1B1A',
+          steel:   '#3F4448',
+          steel2:  '#565D62',
+          paper:   '#EEEBE2',
+          paper2:  '#E3DFD3',
+          amber:   '#F2B705',
+          rust:    '#B5502C',
+        },
+        fontFamily: {
+          display: ['"Bebas Neue"','sans-serif'],
+          head:    ['"Oswald"','sans-serif'],
+          body:    ['"Inter"','sans-serif'],
+          mono:    ['"IBM Plex Mono"','monospace'],
+        },
+      }
+    }
+  }
+</script>
+
+<style>
+  html { scroll-behavior: smooth; }
+  body { background-color: #EEEBE2; }
+
+  .blueprint-grid {
+    background-image:
+      linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+    background-size: 32px 32px;
+  }
+  .blueprint-grid-dark {
+    background-image:
+      linear-gradient(rgba(28,27,26,0.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(28,27,26,0.06) 1px, transparent 1px);
+    background-size: 28px 28px;
+  }
+
+  /* riveted plate corners */
+  .rivet-plate { position: relative; }
+  .rivet-plate::before,
+  .rivet-plate::after,
+  .rivet-plate .rivet-tl,
+  .rivet-plate .rivet-tr,
+  .rivet-plate .rivet-bl,
+  .rivet-plate .rivet-br { content: ""; }
+  .rivet {
+    position: absolute;
+    width: 14px; height: 14px;
+    border-radius: 9999px;
+    background: radial-gradient(circle at 35% 30%, #cfcac0, #8a8479 55%, #57524a 100%);
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,0.35), 0 1px 1px rgba(0,0,0,0.4);
+  }
+
+  .stencil-num { font-family: 'IBM Plex Mono', monospace; letter-spacing: 0.05em; }
+
+  .nav-link { position: relative; }
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0; bottom: -4px;
+    width: 0%; height: 2px;
+    background: #F2B705;
+    transition: width .25s ease;
+  }
+  .nav-link:hover::after { width: 100%; }
+
+  .card-hover { transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease; }
+  .card-hover:hover { transform: translateY(-4px); box-shadow: 0 10px 25px rgba(28,27,26,0.15); }
+
+  ::selection { background: #F2B705; color: #1C1B1A; }
+
+  .marquee-track {
+    display: flex;
+    width: max-content;
+    animation: scroll-left 26s linear infinite;
+  }
+  @keyframes scroll-left {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .marquee-track { animation: none; }
+    html { scroll-behavior: auto; }
+  }
+
+  .focus-visible-ring:focus-visible {
+    outline: 2px solid #F2B705;
+    outline-offset: 2px;
+  }
+</style>
+</head>
+
+<body class="font-body text-iron antialiased">
+
+<!-- ============ NAV ============ -->
+<header class="fixed top-0 inset-x-0 z-50 bg-iron/95 backdrop-blur border-b border-white/10">
+  <div class="max-w-6xl mx-auto px-5 md:px-8 flex items-center justify-between h-16">
+    <a href="#top" class="flex items-center gap-2.5 focus-visible-ring">
+      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="15" cy="15" r="13" stroke="#F2B705" stroke-width="2"/>
+        <path d="M15 6V10M15 20V24M24 15H20M10 15H6M21.36 8.64L18.53 11.47M11.47 18.53L8.64 21.36M21.36 21.36L18.53 18.53M11.47 11.47L8.64 8.64" stroke="#F2B705" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="15" cy="15" r="4" fill="#F2B705"/>
+      </svg>
+      <span class="font-head font-semibold tracking-wide text-paper text-sm md:text-base leading-tight">
+        HARSH ENGINEERING<br class="hidden md:block"><span class="text-amber"> WORKS</span>
+      </span>
+    </a>
+
+    <nav class="hidden md:flex items-center gap-8 text-sm font-head tracking-wide text-paper/90 uppercase">
+      <a href="#works" class="nav-link focus-visible-ring">Works</a>
+      <a href="#machines" class="nav-link focus-visible-ring">Machines</a>
+      <a href="#pricing" class="nav-link focus-visible-ring">Pricing</a>
+      <a href="#contact" class="nav-link focus-visible-ring">Contact</a>
+    </nav>
+
+    <a href="tel:+918043823727" class="hidden md:inline-flex items-center gap-2 bg-amber text-iron text-sm font-head tracking-wide uppercase px-4 py-2 rounded-sm hover:bg-white transition-colors focus-visible-ring">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.2 1L6.6 10.8z" stroke="#1C1B1A" stroke-width="1.6"/></svg>
+      Call Now
+    </a>
+
+    <button id="menuBtn" class="md:hidden text-paper focus-visible-ring" aria-label="Open menu" aria-expanded="false">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 12h16M4 18h16" stroke="#EEEBE2" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+
+  <div id="mobileMenu" class="hidden md:hidden bg-iron border-t border-white/10 px-5 py-4 space-y-3 text-paper font-head uppercase tracking-wide text-sm">
+    <a href="#works" class="block py-1 focus-visible-ring">Works</a>
+    <a href="#machines" class="block py-1 focus-visible-ring">Machines</a>
+    <a href="#pricing" class="block py-1 focus-visible-ring">Pricing</a>
+    <a href="#contact" class="block py-1 focus-visible-ring">Contact</a>
+    <a href="tel:+918043823727" class="block mt-2 bg-amber text-iron text-center py-2 rounded-sm">Call Now</a>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section id="top" class="relative bg-iron text-paper pt-28 pb-20 md:pt-40 md:pb-28 overflow-hidden blueprint-grid">
+  <div class="absolute -right-24 -top-24 w-96 h-96 rounded-full border border-amber/10"></div>
+  <div class="absolute -right-10 top-10 w-72 h-72 rounded-full border border-amber/10"></div>
+
+  <div class="relative max-w-6xl mx-auto px-5 md:px-8">
+    <p class="stencil-num text-amber text-xs md:text-sm tracking-[0.25em] mb-4">NOIDA, UTTAR PRADESH · GST-REGISTERED MANUFACTURER</p>
+    <h1 class="font-display text-5xl sm:text-6xl md:text-8xl leading-[0.95] tracking-wide max-w-4xl">
+      SCREW CUTTING,<br>
+      <span class="text-amber">NUT &amp; BOLT</span> WORK<br>
+      DONE TO SPEC.
+    </h1>
+    <p class="mt-6 max-w-xl text-paper/75 font-body text-base md:text-lg leading-relaxed">
+      Harsh Engineering Works is a Noida-based manufacturer of brass bush, nuts, bolts, brass nut, metal bush, metal bolt and industrial fasteners — plus screw cutting and custom turning job work, single pieces or bulk runs.
+    </p>
+
+    <div class="mt-9 flex flex-wrap gap-4">
+      <a href="#contact" class="bg-amber text-iron font-head uppercase tracking-wide text-sm px-6 py-3.5 rounded-sm hover:bg-white transition-colors focus-visible-ring">Get a Quote</a>
+      <a href="#pricing" class="border border-paper/30 text-paper font-head uppercase tracking-wide text-sm px-6 py-3.5 rounded-sm hover:border-amber hover:text-amber transition-colors focus-visible-ring">View Per-Piece Pricing</a>
+    </div>
+
+    <!-- nameplate stat strip -->
+    <div class="mt-14 grid grid-cols-2 md:grid-cols-4 gap-px bg-white/10 border border-white/10 rounded-sm overflow-hidden max-w-3xl">
+      <div class="bg-iron px-5 py-5">
+        <div class="stencil-num text-amber text-2xl md:text-3xl">2017</div>
+        <div class="text-paper/60 text-xs uppercase tracking-wide mt-1 font-head">GST Registered Since</div>
+      </div>
+      <div class="bg-iron px-5 py-5">
+        <div class="stencil-num text-amber text-2xl md:text-3xl">8</div>
+        <div class="text-paper/60 text-xs uppercase tracking-wide mt-1 font-head">Product Categories</div>
+      </div>
+      <div class="bg-iron px-5 py-5">
+        <div class="stencil-num text-amber text-2xl md:text-3xl">MS/SS/Brass</div>
+        <div class="text-paper/60 text-xs uppercase tracking-wide mt-1 font-head">Materials Worked</div>
+      </div>
+      <div class="bg-iron px-5 py-5">
+        <div class="stencil-num text-amber text-2xl md:text-3xl">6</div>
+        <div class="text-paper/60 text-xs uppercase tracking-wide mt-1 font-head">Machines Running</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- marquee strip -->
+<div class="bg-amber text-iron overflow-hidden border-y border-iron/10 py-2.5">
+  <div class="marquee-track font-head uppercase tracking-widest text-xs md:text-sm">
+    <span class="px-6">Brass Bush</span><span class="px-6">•</span>
+    <span class="px-6">Nuts</span><span class="px-6">•</span>
+    <span class="px-6">Bolts</span><span class="px-6">•</span>
+    <span class="px-6">Brass Nut</span><span class="px-6">•</span>
+    <span class="px-6">Metal Bush</span><span class="px-6">•</span>
+    <span class="px-6">Metal Bolt</span><span class="px-6">•</span>
+    <span class="px-6">Nut Bolt</span><span class="px-6">•</span>
+    <span class="px-6">Industrial Fasteners</span><span class="px-6">•</span>
+    <span class="px-6">Brass Bush</span><span class="px-6">•</span>
+    <span class="px-6">Nuts</span><span class="px-6">•</span>
+    <span class="px-6">Bolts</span><span class="px-6">•</span>
+    <span class="px-6">Brass Nut</span><span class="px-6">•</span>
+    <span class="px-6">Metal Bush</span><span class="px-6">•</span>
+    <span class="px-6">Metal Bolt</span><span class="px-6">•</span>
+    <span class="px-6">Nut Bolt</span><span class="px-6">•</span>
+    <span class="px-6">Industrial Fasteners</span><span class="px-6">•</span>
+  </div>
+</div>
+
+<!-- ============ WORKS / SERVICES ============ -->
+<section id="works" class="bg-paper py-20 md:py-28 blueprint-grid-dark">
+  <div class="max-w-6xl mx-auto px-5 md:px-8">
+    <div class="flex items-end justify-between flex-wrap gap-4 mb-12">
+      <div>
+        <p class="stencil-num text-rust text-xs tracking-[0.25em] mb-2">WHAT WE MANUFACTURE</p>
+        <h2 class="font-head font-semibold text-3xl md:text-5xl tracking-tight">Our Product Range</h2>
+      </div>
+      <p class="max-w-sm text-steel text-sm leading-relaxed">Manufacturer based in Noida, Uttar Pradesh, GST-registered since 2017 — from a single custom piece to a bulk order, every batch runs through the same machines and checks.</p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
+      <div class="card-hover bg-white border border-iron/10 rounded-sm p-6">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" class="mb-4"><rect x="7" y="4" width="10" height="16" rx="5" stroke="#B5502C" stroke-width="1.8"/><circle cx="12" cy="12" r="2" stroke="#B5502C" stroke-width="1.8"/></svg>
+        <h3 class="font-head font-semibold text-lg mb-1.5">Brass Bush</h3>
+        <p class="text-steel text-sm leading-relaxed">Brass bush, brass metal bush and brass roller bush in standard sizes including 1 inch bore.</p>
+      </div>
+
+      <div class="card-hover bg-white border border-iron/10 rounded-sm p-6">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" class="mb-4"><circle cx="12" cy="12" r="8" stroke="#B5502C" stroke-width="1.8"/><circle cx="12" cy="12" r="3" stroke="#B5502C" stroke-width="1.8"/></svg>
+        <h3 class="font-head font-semibold text-lg mb-1.5">Nuts</h3>
+        <p class="text-steel text-sm leading-relaxed">Hex nuts and automotive nuts in mild steel, priced and supplied per piece or in bulk.</p>
+      </div>
+
+      <div class="card-hover bg-white border border-iron/10 rounded-sm p-6">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" class="mb-4"><path d="M4 15l5-5 3 3 8-8M14 5h6v6" stroke="#B5502C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3 class="font-head font-semibold text-lg mb-1.5">Bolts</h3>
+        <p class="text-steel text-sm leading-relaxed">Machine nut bolts, bolt caps and hinge bolts machined and threaded to standard sizes.</p>
+      </div>
+
+      <div class="card-hover bg-white border border-iron/10 rounded-sm p-6">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" class="mb-4"><path d="M12 3v6m0 6v6M3 12h6m6 0h6" stroke="#B5502C" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="12" r="3" stroke="#B5502C" stroke-width="1.8"/></svg>
+        <h3 class="font-head font-semibold text-lg mb-1.5">Brass Nut</h3>
+        <p class="text-steel text-sm leading-relaxed">Brass moulding nut and mould nut, machined for die-mould and moulding industry fitments.</p>
+      </div>
+
+      <div class="card-hover bg-white border border-iron/10 rounded-sm p-6">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" class="mb-4"><rect x="4" y="4" width="16" height="16" rx="1" stroke="#B5502C" stroke-width="1.8"/><path d="M4 9h16M9 4v16" stroke="#B5502C" stroke-width="1.8"/></svg>
+        <h3 class="font-head font-semibold text-lg mb-1.5">Metal Bush</h3>
+        <p class="text-steel text-sm leading-relaxed">Metal bush and automotive bush turned to size for machinery and vehicle applications.</p>
+      </div>
+
+      <div class="card-hover bg-white border border-iron/10 rounded-sm p-6">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" class="mb-4"><path d="M5 21V8l7-5 7 5v13M9 21v-6h6v6" stroke="#B5502C" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        <h3 class="font-head font-semibold text-lg mb-1.5">Metal Bolt</h3>
+        <p class="text-steel text-sm leading-relaxed">Brass nut bolt, stainless steel bolts and automotive bolts for higher-grade fitments.</p>
+      </div>
+
+      <div class="card-hover bg-white border border-iron/10 rounded-sm p-6">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" class="mb-4"><path d="M3 7h18M3 12h18M3 17h18" stroke="#B5502C" stroke-width="1.8" stroke-linecap="round"/><circle cx="7" cy="7" r="1.6" fill="#B5502C"/><circle cx="14" cy="12" r="1.6" fill="#B5502C"/><circle cx="9" cy="17" r="1.6" fill="#B5502C"/></svg>
+        <h3 class="font-head font-semibold text-lg mb-1.5">Nut Bolt</h3>
+        <p class="text-steel text-sm leading-relaxed">Combined nut-bolt sets and plastic nuts, sold per piece or per kg for bulk hardware orders.</p>
+      </div>
+
+      <div class="card-hover bg-white border border-iron/10 rounded-sm p-6">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" class="mb-4"><path d="M6 3h12l3 6-9 12L3 9l3-6z" stroke="#B5502C" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        <h3 class="font-head font-semibold text-lg mb-1.5">Industrial Fasteners</h3>
+        <p class="text-steel text-sm leading-relaxed">Wifi fibre nuts, die mould components and pipe fittings for industrial and telecom use.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ MACHINES ============ -->
+<section id="machines" class="bg-iron text-paper py-20 md:py-28">
+  <div class="max-w-6xl mx-auto px-5 md:px-8">
+    <p class="stencil-num text-amber text-xs tracking-[0.25em] mb-2">ON THE FLOOR</p>
+    <h2 class="font-head font-semibold text-3xl md:text-5xl tracking-tight mb-4">Machines We Run</h2>
+    <p class="max-w-xl text-paper/65 text-sm md:text-base leading-relaxed mb-12">Six machines cover cutting, threading, drilling and finishing — enough capacity to run a bulk order and a custom job side by side.</p>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+
+      <div class="border border-white/15 rounded-sm p-6 hover:border-amber/50 transition-colors">
+        <div class="stencil-num text-amber text-xs mb-3">NO. 01</div>
+        <h3 class="font-head font-semibold text-xl mb-2">Center Lathe Machine</h3>
+        <p class="text-paper/65 text-sm leading-relaxed mb-4">Manual turning and screw cutting up to 300mm swing, all standard thread pitches.</p>
+        <div class="text-xs stencil-num text-paper/50">CAPACITY: UP TO 300mm DIA</div>
+      </div>
+
+      <div class="border border-white/15 rounded-sm p-6 hover:border-amber/50 transition-colors">
+        <div class="stencil-num text-amber text-xs mb-3">NO. 02</div>
+        <h3 class="font-head font-semibold text-xl mb-2">Thread Rolling Machine</h3>
+        <p class="text-paper/65 text-sm leading-relaxed mb-4">High-speed rolling for screw and bolt threads, built for bulk production runs.</p>
+        <div class="text-xs stencil-num text-paper/50">OUTPUT: 2000+ PCS / SHIFT</div>
+      </div>
+
+      <div class="border border-white/15 rounded-sm p-6 hover:border-amber/50 transition-colors">
+        <div class="stencil-num text-amber text-xs mb-3">NO. 03</div>
+        <h3 class="font-head font-semibold text-xl mb-2">Nut Tapping Machine</h3>
+        <p class="text-paper/65 text-sm leading-relaxed mb-4">Automatic internal tapping for hex nuts from M3 through M20.</p>
+        <div class="text-xs stencil-num text-paper/50">RANGE: M3 – M20</div>
+      </div>
+
+      <div class="border border-white/15 rounded-sm p-6 hover:border-amber/50 transition-colors">
+        <div class="stencil-num text-amber text-xs mb-3">NO. 04</div>
+        <h3 class="font-head font-semibold text-xl mb-2">Radial Drilling Machine</h3>
+        <p class="text-paper/65 text-sm leading-relaxed mb-4">Bulk hole drilling and pre-tap boring for washers, plates and bolt blanks.</p>
+        <div class="text-xs stencil-num text-paper/50">SWING: 600mm RADIUS</div>
+      </div>
+
+      <div class="border border-white/15 rounded-sm p-6 hover:border-amber/50 transition-colors">
+        <div class="stencil-num text-amber text-xs mb-3">NO. 05</div>
+        <h3 class="font-head font-semibold text-xl mb-2">Power Press</h3>
+        <p class="text-paper/65 text-sm leading-relaxed mb-4">Blanking and pressing for washers and flat fasteners, straight from coil or sheet.</p>
+        <div class="text-xs stencil-num text-paper/50">CAPACITY: 20 TONNE</div>
+      </div>
+
+      <div class="border border-white/15 rounded-sm p-6 hover:border-amber/50 transition-colors">
+        <div class="stencil-num text-amber text-xs mb-3">NO. 06</div>
+        <h3 class="font-head font-semibold text-xl mb-2">Surface Grinder</h3>
+        <p class="text-paper/65 text-sm leading-relaxed mb-4">Final finishing pass for flat and cylindrical surfaces where a tight finish matters.</p>
+        <div class="text-xs stencil-num text-paper/50">FINISH: ±0.02mm</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRICING — SIGNATURE SPEC PLATE ============ -->
+<section id="pricing" class="bg-paper py-20 md:py-28 blueprint-grid-dark">
+  <div class="max-w-6xl mx-auto px-5 md:px-8">
+    <p class="stencil-num text-rust text-xs tracking-[0.25em] mb-2">RATE CARD</p>
+    <h2 class="font-head font-semibold text-3xl md:text-5xl tracking-tight mb-4">Per-Piece Pricing</h2>
+    <p class="max-w-xl text-steel text-sm md:text-base leading-relaxed mb-12">Indicative rates across our product range — actual price depends on size, material and order quantity. Confirmed prices are shared on enquiry.</p>
+
+    <!-- Nameplate wrapper -->
+    <div class="rivet-plate bg-steel rounded-sm p-1.5 shadow-xl">
+      <span class="rivet" style="top:10px; left:10px;"></span>
+      <span class="rivet" style="top:10px; right:10px;"></span>
+      <span class="rivet" style="bottom:10px; left:10px;"></span>
+      <span class="rivet" style="bottom:10px; right:10px;"></span>
+
+      <div class="bg-[#232627] rounded-sm px-4 py-3 md:px-6 md:py-4 flex items-center justify-between border-b border-white/10">
+        <span class="font-head text-paper uppercase tracking-widest text-sm md:text-base">Harsh Engineering Works — Rate Plate</span>
+        <span class="stencil-num text-amber text-xs md:text-sm hidden sm:block">FORM NO. HEW-RC-01</span>
+      </div>
+
+      <div class="overflow-x-auto bg-[#2A2E30]">
+        <table class="w-full text-left border-collapse min-w-[640px]">
+          <thead>
+            <tr class="text-paper/55 font-head uppercase text-xs tracking-wider border-b border-white/10">
+              <th class="px-5 py-4">Item</th>
+              <th class="px-5 py-4">Size Range</th>
+              <th class="px-5 py-4">Material</th>
+              <th class="px-5 py-4 text-right">Price / Piece</th>
+            </tr>
+          </thead>
+          <tbody class="stencil-num text-paper/90 text-sm">
+
+            <tr class="border-b border-white/5">
+              <td class="px-5 py-4 font-medium">Hex Nut</td>
+              <td class="px-5 py-4 text-paper/60">Standard sizes</td>
+              <td class="px-5 py-4 text-paper/60">Mild Steel</td>
+              <td class="px-5 py-4 text-right text-amber">From ₹1.00 / pc</td>
+            </tr>
+            <tr class="border-b border-white/5 bg-white/[0.03]">
+              <td class="px-5 py-4 font-medium">Automotive Nut</td>
+              <td class="px-5 py-4 text-paper/60">As per drawing</td>
+              <td class="px-5 py-4 text-paper/60">Mild Steel</td>
+              <td class="px-5 py-4 text-right text-amber">On request</td>
+            </tr>
+
+            <tr class="border-b border-white/5">
+              <td class="px-5 py-4 font-medium">Machine Nut Bolt</td>
+              <td class="px-5 py-4 text-paper/60">Standard sizes</td>
+              <td class="px-5 py-4 text-paper/60">Mild Steel</td>
+              <td class="px-5 py-4 text-right text-amber">On request</td>
+            </tr>
+            <tr class="border-b border-white/5 bg-white/[0.03]">
+              <td class="px-5 py-4 font-medium">Bolt Cap / Hinge Bolt</td>
+              <td class="px-5 py-4 text-paper/60">As per drawing</td>
+              <td class="px-5 py-4 text-paper/60">Mild Steel</td>
+              <td class="px-5 py-4 text-right text-amber">On request</td>
+            </tr>
+
+            <tr class="border-b border-white/5">
+              <td class="px-5 py-4 font-medium">Nut Bolt (combined)</td>
+              <td class="px-5 py-4 text-paper/60">Standard sizes</td>
+              <td class="px-5 py-4 text-paper/60">Mild Steel</td>
+              <td class="px-5 py-4 text-right text-amber">From ₹100 / kg</td>
+            </tr>
+            <tr class="border-b border-white/5 bg-white/[0.03]">
+              <td class="px-5 py-4 font-medium">Plastic Nut</td>
+              <td class="px-5 py-4 text-paper/60">Standard sizes</td>
+              <td class="px-5 py-4 text-paper/60">Plastic</td>
+              <td class="px-5 py-4 text-right text-amber">From ₹1.00 / pc</td>
+            </tr>
+
+            <tr class="border-b border-white/5">
+              <td class="px-5 py-4 font-medium">Brass Nut / Moulding Nut</td>
+              <td class="px-5 py-4 text-paper/60">Standard &amp; mould-fit sizes</td>
+              <td class="px-5 py-4 text-paper/60">Brass</td>
+              <td class="px-5 py-4 text-right text-amber">On request</td>
+            </tr>
+            <tr class="border-b border-white/5 bg-white/[0.03]">
+              <td class="px-5 py-4 font-medium">Brass Bush</td>
+              <td class="px-5 py-4 text-paper/60">Incl. 1 inch bore</td>
+              <td class="px-5 py-4 text-paper/60">Brass</td>
+              <td class="px-5 py-4 text-right text-amber">On request</td>
+            </tr>
+
+            <tr class="border-b border-white/5">
+              <td class="px-5 py-4 font-medium">Metal Bush</td>
+              <td class="px-5 py-4 text-paper/60">Standard &amp; automotive sizes</td>
+              <td class="px-5 py-4 text-paper/60">Mild Steel</td>
+              <td class="px-5 py-4 text-right text-amber">On request</td>
+            </tr>
+            <tr class="border-b border-white/5 bg-white/[0.03]">
+              <td class="px-5 py-4 font-medium">SS Bolt</td>
+              <td class="px-5 py-4 text-paper/60">Standard sizes</td>
+              <td class="px-5 py-4 text-paper/60">Stainless Steel</td>
+              <td class="px-5 py-4 text-right text-amber">On request</td>
+            </tr>
+
+            <tr class="bg-white/[0.03]">
+              <td class="px-5 py-4 font-medium">Pipe / Industrial Fastener</td>
+              <td class="px-5 py-4 text-paper/60">As per drawing</td>
+              <td class="px-5 py-4 text-paper/60">Mild Steel</td>
+              <td class="px-5 py-4 text-right text-amber">From ₹1.00 / pc</td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+
+      <div class="bg-[#232627] px-5 py-4 flex flex-wrap gap-x-8 gap-y-2 text-paper/60 text-xs font-body border-t border-white/10">
+        <span>• "On request" items are quoted against size, drawing and quantity</span>
+        <span>• Stainless steel &amp; brass: priced above mild steel rate</span>
+        <span>• Bulk orders: ask for a per-kg or per-piece slab rate</span>
+      </div>
+    </div>
+
+    <p class="mt-6 text-steel/70 text-xs">Rates shown are indicative IndiaMART listing prices as of the print date and are subject to change with material cost. Final price confirmed on order.</p>
+  </div>
+</section>
+
+<!-- ============ WHY US ============ -->
+<section class="bg-paper2 py-16 md:py-20 border-y border-iron/10">
+  <div class="max-w-6xl mx-auto px-5 md:px-8 grid md:grid-cols-3 gap-8">
+    <div>
+      <div class="stencil-num text-rust text-2xl mb-2">01</div>
+      <h3 class="font-head font-semibold text-lg mb-1.5">Checked Before It Leaves</h3>
+      <p class="text-steel text-sm leading-relaxed">Every batch is measured against tolerance before packing — no guesswork on thread fit.</p>
+    </div>
+    <div>
+      <div class="stencil-num text-rust text-2xl mb-2">02</div>
+      <h3 class="font-head font-semibold text-lg mb-1.5">Same-Week Bulk Turnaround</h3>
+      <p class="text-steel text-sm leading-relaxed">Standard sizes in stock quantity ship fast; custom runs are scheduled and confirmed upfront.</p>
+    </div>
+    <div>
+      <div class="stencil-num text-rust text-2xl mb-2">03</div>
+      <h3 class="font-head font-semibold text-lg mb-1.5">One Point of Contact</h3>
+      <p class="text-steel text-sm leading-relaxed">Call, WhatsApp, or visit the workshop directly — no call centre, just the person running your job.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="bg-iron text-paper py-20 md:py-28 blueprint-grid">
+  <div class="max-w-6xl mx-auto px-5 md:px-8 grid md:grid-cols-2 gap-12">
+    <div>
+      <p class="stencil-num text-amber text-xs tracking-[0.25em] mb-2">GET IN TOUCH</p>
+      <h2 class="font-head font-semibold text-3xl md:text-5xl tracking-tight mb-6">Send Us Your Requirement</h2>
+      <p class="text-paper/65 text-sm md:text-base leading-relaxed mb-8 max-w-md">Tell us the item, size and quantity — we'll confirm the per-piece price and delivery time same day.</p>
+
+      <div class="space-y-5 font-body text-sm">
+        <div class="flex items-start gap-3">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" class="mt-0.5 shrink-0"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.2 1L6.6 10.8z" stroke="#F2B705" stroke-width="1.6"/></svg>
+          <div>
+            <div class="text-paper/50 text-xs uppercase tracking-wide font-head">Phone / WhatsApp</div>
+            <a href="tel:+918043823727" class="hover:text-amber transition-colors">+91 80438 23727</a>
+            <div class="text-paper/40 text-xs mt-0.5">Owner: Lalman</div>
+          </div>
+        </div>
+        <div class="flex items-start gap-3">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" class="mt-0.5 shrink-0"><path d="M3 6l9 6 9-6M3 6h18v12H3V6z" stroke="#F2B705" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          <div>
+            <div class="text-paper/50 text-xs uppercase tracking-wide font-head">Also Listed On</div>
+            <a href="https://www.indiamart.com/harshengineeringworks-noida/" target="_blank" rel="noopener" class="hover:text-amber transition-colors">IndiaMART Storefront →</a>
+          </div>
+        </div>
+        <div class="flex items-start gap-3">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" class="mt-0.5 shrink-0"><path d="M12 21s7-6.1 7-11.5A7 7 0 105 9.5C5 14.9 12 21 12 21z" stroke="#F2B705" stroke-width="1.6"/><circle cx="12" cy="9.5" r="2.4" stroke="#F2B705" stroke-width="1.6"/></svg>
+          <div>
+            <div class="text-paper/50 text-xs uppercase tracking-wide font-head">Workshop Address</div>
+            <span>Noida, Gautam Buddha Nagar, Uttar Pradesh</span>
+          </div>
+        </div>
+        <div class="flex items-start gap-3">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" class="mt-0.5 shrink-0"><circle cx="12" cy="12" r="9" stroke="#F2B705" stroke-width="1.6"/><path d="M12 7v5l3 3" stroke="#F2B705" stroke-width="1.6" stroke-linecap="round"/></svg>
+          <div>
+            <div class="text-paper/50 text-xs uppercase tracking-wide font-head">Working Hours</div>
+            <span>Mon – Sat, 9:00 AM – 7:00 PM</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <form class="bg-[#232627] border border-white/10 rounded-sm p-6 md:p-8 space-y-4" onsubmit="event.preventDefault(); this.reset(); document.getElementById('formMsg').classList.remove('hidden');">
+      <div>
+        <label class="block text-xs uppercase tracking-wide font-head text-paper/60 mb-1.5">Name</label>
+        <input type="text" required class="w-full bg-iron border border-white/15 rounded-sm px-3.5 py-2.5 text-sm text-paper placeholder:text-paper/30 focus-visible-ring focus:border-amber outline-none" placeholder="Your name">
+      </div>
+      <div>
+        <label class="block text-xs uppercase tracking-wide font-head text-paper/60 mb-1.5">Phone</label>
+        <input type="tel" required class="w-full bg-iron border border-white/15 rounded-sm px-3.5 py-2.5 text-sm text-paper placeholder:text-paper/30 focus-visible-ring focus:border-amber outline-none" placeholder="10-digit mobile number">
+      </div>
+      <div>
+        <label class="block text-xs uppercase tracking-wide font-head text-paper/60 mb-1.5">Item &amp; Quantity Required</label>
+        <textarea rows="3" required class="w-full bg-iron border border-white/15 rounded-sm px-3.5 py-2.5 text-sm text-paper placeholder:text-paper/30 focus-visible-ring focus:border-amber outline-none resize-none" placeholder="e.g. M8 hex bolts, 40mm, 1000 pieces"></textarea>
+      </div>
+      <button type="submit" class="w-full bg-amber text-iron font-head uppercase tracking-wide text-sm py-3 rounded-sm hover:bg-white transition-colors focus-visible-ring">Send Enquiry</button>
+      <p id="formMsg" class="hidden text-amber text-xs pt-1">Enquiry noted — we'll call you back shortly. (Connect this form to your email/WhatsApp to receive it live.)</p>
+    </form>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-iron border-t border-white/10 py-8">
+  <div class="max-w-6xl mx-auto px-5 md:px-8 flex flex-col md:flex-row items-center justify-between gap-3 text-paper/50 text-xs font-body">
+    <span>© <span id="year"></span> Harsh Engineering Works. All rights reserved.</span>
+    <span class="stencil-num">SCREW CUTTING · NUTS · BOLTS · WASHERS · CUSTOM JOB WORK</span>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('menuBtn').addEventListener('click', function () {
+    const menu = document.getElementById('mobileMenu');
+    const isHidden = menu.classList.contains('hidden');
+    menu.classList.toggle('hidden');
+    this.setAttribute('aria-expanded', String(isHidden));
+  });
+  document.querySelectorAll('#mobileMenu a').forEach(a => {
+    a.addEventListener('click', () => document.getElementById('mobileMenu').classList.add('hidden'));
+  });
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
